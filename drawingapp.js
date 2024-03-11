@@ -47,8 +47,8 @@ window.addEventListener('load',function(){
        ctx.moveTo(e.clientX, e.clientY);
     }
     // Eventlistners
-    canva.addEventListener('mousedown',startPosition);
-    canva.addEventListener('mouseup',finishPosition);
-    canva.addEventListener('mousemove',draw);
+    canva.addEventListener('touchstart',startPosition);
+    canva.addEventListener('touchend',finishPosition);
+    canva.addEventListener('touchmove',draw);
 
 })
